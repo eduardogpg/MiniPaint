@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
     public class DrawView extends View{
 
         private final int finalColor = Color.parseColor("#9FA9DF");
+        private final int widthPencil = 14;
+        private final int widthEraser = 20;
+        private final int widthCircle = 20;
+
 
         private Context myContex;
         private float lastPostX, lastPostY;
@@ -78,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             this.circlePaint.setColor(this.finalColor);
             this.circlePaint.setStyle(Paint.Style.STROKE);//Nos permite que haya un circulo dentro
 
-            this.circlePaint.setStrokeWidth(15);
+            this.circlePaint.setStrokeWidth(this.widthCircle);
         }
 
         private void createPaint(){
@@ -158,12 +162,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         private void setEraser(){
-            this.paint.setStrokeWidth(20);
+            this.paint.setStrokeWidth(this.widthEraser);
             this.paint.setColor(Color.WHITE);
         }
 
         private void setPencil(){
-            this.paint.setStrokeWidth(12);
+            this.paint.setStrokeWidth(this.widthPencil);
             this.paint.setColor(this.finalColor);
         }
 
