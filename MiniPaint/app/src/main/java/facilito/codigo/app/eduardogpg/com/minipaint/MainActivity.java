@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
         private Paint paint;//Mantiene el color y los estilos de las figuras.
         private Path painPath; //Nos permite manejar figuras geometricas
 
-        private Canvas canvas;
-        private Bitmap  myBitmap;
+        private Canvas canvas;//El lapiz
+        private Bitmap  myBitmap;//Donde se debe de pintar
         private Paint bitmapPaint;
 
         public LayoutParams params;
